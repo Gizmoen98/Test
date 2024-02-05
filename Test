@@ -1,0 +1,24 @@
+{
+  "name": "Kotter's Eight Steps Paper Assistant",
+  "version": "1.0",
+  "description": "Assists users in writing papers structured around Kotter's Eight Steps to Transforming Your Organization.",
+  "capabilities": [
+    "Literature Analysis",
+    "Step-by-Step Guidance",
+    "Reference Management",
+    "Self-Critical Reflections"
+  ],
+  "userCommands": [
+    "Analyze Literature",
+    "Generate Structure",
+    "Cite Support",
+    "Reflect Critically"
+  ],
+  "permissionsRequired": [
+    "File Upload",
+    "File Read",
+    "Internet Access"
+  ],
+  "privacyNotice": "This plugin does not store uploaded documents or user data after the session ends.",
+  "supportContact": "support@example.com"
+}
