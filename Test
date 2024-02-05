@@ -1,24 +1,57 @@
 {
-  "name": "Kotter's Eight Steps Paper Assistant",
-  "version": "1.0",
-  "description": "Assists users in writing papers structured around Kotter's Eight Steps to Transforming Your Organization.",
+  "pluginName": "KotterPaperAssistant",
+  "version": "1.0.0",
+  "description": "A plugin designed to assist in writing academic papers or business reports structured around Kotter's Eight Steps to Transforming Your Organization. It offers guidance, literature analysis, and critical reflection prompts.",
+  "author": "Your Name or Organization",
+  "website": "https://example.com/KotterPaperAssistant",
+  "documentationUrl": "https://example.com/KotterPaperAssistant/docs",
+  "supportEmail": "support@example.com",
   "capabilities": [
-    "Literature Analysis",
-    "Step-by-Step Guidance",
-    "Reference Management",
-    "Self-Critical Reflections"
-  ],
-  "userCommands": [
-    "Analyze Literature",
-    "Generate Structure",
-    "Cite Support",
-    "Reflect Critically"
+    {
+      "capabilityName": "AnalyzeLiterature",
+      "description": "Analyzes uploaded literature to find connections to Kotter's Eight Steps."
+    },
+    {
+      "capabilityName": "GenerateStructure",
+      "description": "Generates an outline based on Kotter's Eight Steps."
+    },
+    {
+      "capabilityName": "CiteSupport",
+      "description": "Provides citations from analyzed literature that support each of Kotter's steps."
+    },
+    {
+      "capabilityName": "ReflectCritically",
+      "description": "Suggests prompts for critical reflection on each step."
+    }
   ],
   "permissionsRequired": [
-    "File Upload",
-    "File Read",
-    "Internet Access"
+    "fileUpload",
+    "fileRead",
+    "internetAccess"
   ],
-  "privacyNotice": "This plugin does not store uploaded documents or user data after the session ends.",
-  "supportContact": "support@example.com"
+  "entryPoints": [
+    {
+      "entryPointType": "command",
+      "commandId": "analyzeLiterature",
+      "label": "Analyze Literature for Kotter's Steps"
+    },
+    {
+      "entryPointType": "command",
+      "commandId": "generateStructure",
+      "label": "Generate Paper Structure"
+    },
+    {
+      "entryPointType": "command",
+      "commandId": "citeSupport",
+      "label": "Cite Supporting Literature"
+    },
+    {
+      "entryPointType": "command",
+      "commandId": "reflectCritically",
+      "label": "Reflect Critically on Steps"
+    }
+  ],
+  "iconUrl": "https://example.com/KotterPaperAssistant/icon.png",
+  "minSystemVersion": "1.0",
+  "maxSystemVersion": "2.0"
 }
